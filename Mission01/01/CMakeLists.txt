@@ -1,0 +1,3 @@
+
+PROJECT(matmul)
+ADD_SUBDIRECTORY(src bin)

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -flto -shared  -o example.cpython-39-x86_64-linux-gnu.so CMakeFiles/example.dir/src/mygemm_py.o  -Wl,-rpath,/home/zhuangzhong/Desktop/Netease/Mission01/01/bin:/home/zhuangzhong/Desktop/Netease/lib /home/zhuangzhong/Desktop/Netease/Mission01/01/bin/libmygemm.so /home/zhuangzhong/Desktop/Netease/lib/libopenblas.so 
