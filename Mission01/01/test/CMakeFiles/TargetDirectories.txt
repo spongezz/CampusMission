@@ -1,3 +1,0 @@
-/home/zhuangzhong/Desktop/Netease/Mission01/01/test/CMakeFiles/rebuild_cache.dir
-/home/zhuangzhong/Desktop/Netease/Mission01/01/test/CMakeFiles/edit_cache.dir
-/home/zhuangzhong/Desktop/Netease/Mission01/01/test/CMakeFiles/test.dir

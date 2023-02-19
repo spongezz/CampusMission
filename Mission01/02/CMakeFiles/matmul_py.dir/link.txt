@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -flto -shared  -o matmul_py.cpython-39-x86_64-linux-gnu.so CMakeFiles/matmul_py.dir/src/matmul_py.o  -Wl,-rpath,/home/zhuangzhong/Desktop/Netease/Mission01/01/bin:/home/zhuangzhong/Desktop/Netease/lib /home/zhuangzhong/Desktop/Netease/Mission01/01/bin/libmatmul.so /home/zhuangzhong/Desktop/Netease/lib/libopenblas.so 
