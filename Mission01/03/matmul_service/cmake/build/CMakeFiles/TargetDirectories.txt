@@ -1,5 +1,0 @@
-/home/zhuangzhong/Netease/Mission01/03/matmul_service/cmake/build/CMakeFiles/rebuild_cache.dir
-/home/zhuangzhong/Netease/Mission01/03/matmul_service/cmake/build/CMakeFiles/matmul_server.dir
-/home/zhuangzhong/Netease/Mission01/03/matmul_service/cmake/build/CMakeFiles/matmul_client.dir
-/home/zhuangzhong/Netease/Mission01/03/matmul_service/cmake/build/CMakeFiles/edit_cache.dir
-/home/zhuangzhong/Netease/Mission01/03/matmul_service/cmake/build/CMakeFiles/mm_grpc_proto.dir
