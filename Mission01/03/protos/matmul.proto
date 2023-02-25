@@ -1,0 +1,39 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.matmul";
+option java_outer_classname = "MatMulProto";
+option objc_class_prefix = "MMG";
+
+package matmul;
+
+
+
+service Mat_Mul{
+    rpc set_weight(Matrix) returns (IsOK) {}
+    rpc matmul_with_x(Matrix) returns (Matrix) {}
+}
+
+message Matrix {
+    uint32 m_rows = 1;
+    uint32 m_cols = 2;
+    repeated float m_data = 3 [packed=true];
+}
+
+message IsOK{
+    bool isok = 1;
+}
