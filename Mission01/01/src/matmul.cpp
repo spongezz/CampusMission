@@ -56,5 +56,5 @@ void mat_mul1(int n_a_rows, int n_a_cols, const float *a, int n_b_cols, const fl
 void mat_mul2(int n_a_rows, int n_a_cols, const float *a, int n_b_cols, const float *b, float *c)
 {
     float n_b_rows = n_a_cols;
-    cblas_sgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n_a_rows, n_b_cols, n_a_cols, 1.0f, a, n_a_rows, b, n_b_rows, 0.0f, c, n_a_rows);
+    cblas_sgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n_a_rows, n_b_cols, n_a_cols, 1.0f, a, n_a_cols, b, n_b_cols, 0.0f, c, n_b_cols);
 }

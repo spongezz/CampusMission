@@ -110,7 +110,7 @@ public:
   void MatMulWithX(Matrix *X, Matrix *res)
   {
     ClientContext context;
-
+    assert(X->m_rows() == this->W_cols);
     Status status = stub_->matmul_with_x(&context, *X, res);
   }
 
@@ -130,14 +130,14 @@ int main(int argc, char **argv)
                           grpc::InsecureChannelCredentials()));
 
   std::cout << "-------------- Set_Weight --------------" << std::endl;
-  Matrix W = MakeMatrix(3, 3, false);
+  Matrix W = MakeMatrix(4, 3, false);
   printMatrix(W);
   guide.SetWeight(&W);
 
   std::cout << "-------------- MatMulWithX --------------" << std::endl;
   Matrix X = MakeMatrix(3, 3, false);
   printMatrix(X);
-  Matrix res = MakeMatrix(3, 3, true);
+  Matrix res;
   guide.MatMulWithX(&X, &res);
   std::cout << "-------------- MatMulWithX --------------" << std::endl;
   printMatrix(res);

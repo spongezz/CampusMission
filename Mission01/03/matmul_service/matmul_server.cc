@@ -59,24 +59,28 @@ public:
     return Status::OK;
   }
 
-  Status matmul_with_x(ServerContext *context, const Matrix *X, Matrix *result) override
+  Status matmul_with_x(ServerContext *context, const Matrix *X, Matrix *response) override
   {
     size_t n_w_rows = W.m_rows();
     size_t n_w_cols = W.m_cols();
+    size_t n_x_rows = X->m_rows();
     size_t n_x_cols = X->m_cols();
 
-    result->set_m_rows(n_w_cols);
-    result->set_m_cols(n_x_cols);
+    assert(n_x_rows == n_w_cols);
+
+    response->set_m_rows(n_w_rows);
+    response->set_m_cols(n_x_cols);
+    response->mutable_m_data()->Resize(n_w_rows * n_x_cols, 0.0);
 
     std::vector<float> w(n_w_rows * n_w_cols);
-    std::vector<float> x(n_w_cols * n_x_cols);
+    std::vector<float> x(n_x_rows * n_x_cols);
     std::vector<float> res(n_w_rows * n_x_cols, 0.0);
 
     Matrix2Vec(&W, w);
     Matrix2Vec(X, x);
     mat_mul2(n_w_rows, n_w_cols, &*w.begin(), n_x_cols, &*x.begin(), &*res.begin());
 
-    *result->mutable_m_data() = {res.begin(), res.end()};
+    *response->mutable_m_data() = {res.begin(), res.end()};
 
     return Status::OK;
   }

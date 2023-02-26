@@ -71,19 +71,19 @@ static void BM_blas(benchmark::State &state)
     int n = state.range(0);
     float *a, *b, *c;
 
-    a = mat_gen_random(n, n);
+    a = mat_gen_random(5, n);
     b = mat_gen_random(n, n);
-    c = mat_init(n, n);
+    c = mat_init(5, n);
     for (auto _ : state)
     {
         // This code gets timed
-        mat_mul2(n, n, a, n, b, c);
+        mat_mul2(5, n, a, n, b, c);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM_naive)->RangeMultiplier(10)->Range(10, 10000);
-BENCHMARK(BM_sdot)->RangeMultiplier(10)->Range(10, 10000);
+// BENCHMARK(BM_naive)->RangeMultiplier(10)->Range(10, 10000);
+// BENCHMARK(BM_sdot)->RangeMultiplier(10)->Range(10, 10000);
 BENCHMARK(BM_blas)->RangeMultiplier(10)->Range(10, 10000);
 
 // Run the benchmark
