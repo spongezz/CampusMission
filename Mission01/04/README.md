@@ -1,0 +1,1 @@
+# The ghz test is on ../03/
