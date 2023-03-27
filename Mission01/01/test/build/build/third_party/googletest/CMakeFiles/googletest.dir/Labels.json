@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/CMakeFiles/googletest"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/CMakeFiles/googletest.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/CMakeFiles/googletest-complete.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-install.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-mkdir.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-download.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-update.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-patch.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-configure.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-build.rule"
+		},
+		{
+			"file" : "/home/zhuangzhong/Netease/Mission01/01/test/build/build/third_party/googletest/stamp/googletest-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}

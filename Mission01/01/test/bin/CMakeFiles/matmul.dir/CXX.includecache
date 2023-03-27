@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../include/cblas.h
+stddef.h
+-
+openblas_config.h
+../../../include/openblas_config.h
+
+../../../include/openblas_config.h
+stdint.h
+-
+stdio.h
+-
+complex.h
+-
+sched.h
+-
+
+/home/zhuangzhong/Netease/Mission01/01/src/matmul.cpp
+matmul.hpp
+/home/zhuangzhong/Netease/Mission01/01/src/matmul.hpp
+cblas.h
+-
+
+/home/zhuangzhong/Netease/Mission01/01/src/matmul.hpp
+iostream
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+xmmintrin.h
+-
+

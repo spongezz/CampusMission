@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/test.dir/main.cpp.o  -o test  -Wl,-rpath,/home/zhuangzhong/Netease/Mission01/01/bin:/usr/local/lib build/src/libbenchmark.a /home/zhuangzhong/Netease/Mission01/01/bin/libmatmul.so /usr/local/lib/libopenblas.so -pthread -lrt 
